@@ -295,4 +295,6 @@ func InitDressingPriceList() {
 		Price:       0.15,
 		ProcessType: "Ek İşlem",
 	}
+	config.DB.Create(&DressingPrice)
+	fmt.Println(DressingPrice.ID)
 }

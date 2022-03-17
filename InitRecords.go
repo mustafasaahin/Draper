@@ -8,23 +8,24 @@ import (
 )
 
 func InitRecords() {
-	if err :=
-		config.DB.Migrator().DropTable(
-			models.Setup{},
-			models.Yarns{},
-			models.Product{},
-			models.DressingPriceList{},
-		); err != nil {
+	if err := config.DB.Migrator().DropTable(
+		models.DressingPriceList{},
+		models.Yarns{},
+		models.Product{},
+		models.Setup{},
+	); err != nil {
 		fmt.Println(err.Error())
 	}
 	if err := config.DB.AutoMigrate(
 		models.Setup{},
-		models.Yarns{},
 		models.Product{},
+		models.Yarns{},
 		models.DressingPriceList{}); err != nil {
 		fmt.Println(err.Error())
 	}
 	InitData.InitDressingPriceList()
-	InitData.InitDressingPriceList()
+	InitData.InitProduct()
 	InitData.InitYarns()
+	InitData.InitSetup()
+
 }

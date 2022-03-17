@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	appDBName         = "mustafa"
+	appDBName         = "Draper"
 	appDBHost         = "localhost"
 	appDBUserName     = "postgres"
 	appDBUserPassword = "31298"

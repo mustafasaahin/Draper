@@ -10,6 +10,9 @@ func main() {
 	InitRecords()
 	app := gin.Default()
 
-	app.Run(config.GetOutboundIP() + ":8014")
+	err := app.Run(config.GetOutboundIP() + ":8014")
+	if err != nil {
+		return
+	}
 
 }
