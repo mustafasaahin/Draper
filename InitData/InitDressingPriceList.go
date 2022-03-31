@@ -1,7 +1,6 @@
 package InitData
 
 import (
-	"fmt"
 	"github.com/mustafasaahin/Draper/config"
 	"github.com/mustafasaahin/Draper/models"
 )
@@ -19,7 +18,6 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
 
 	DressingPrice = models.DressingPriceList{
 		Code:        "P002",
@@ -28,7 +26,6 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
 
 	DressingPrice = models.DressingPriceList{
 		Code:        "P003",
@@ -37,7 +34,6 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
 
 	DressingPrice = models.DressingPriceList{
 		Code:        "P004",
@@ -46,7 +42,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P005",
 		Process:     "Katyonik Tekboya",
@@ -54,7 +50,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P006",
 		Process:     "Katyonik Çift Boya",
@@ -62,7 +58,6 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
 
 	DressingPrice = models.DressingPriceList{
 		Code:        "P007",
@@ -71,7 +66,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P008",
 		Process:     "Bengalin Tek Boya",
@@ -79,7 +74,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P009",
 		Process:     "Bengalin Çift Boya",
@@ -87,7 +82,6 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
 
 	DressingPrice = models.DressingPriceList{
 		Code:        "P010",
@@ -96,7 +90,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P011",
 		Process:     "Dimi - Soft Mikro",
@@ -104,7 +98,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P012",
 		Process:     "Naylon Mikro-Pamuk Çift Boya",
@@ -112,7 +106,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P013",
 		Process:     "Naylon Mikro - Pamuk Çift Boya Likra",
@@ -120,7 +114,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P014",
 		Process:     "Pamuk Tekboya",
@@ -128,7 +122,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P015",
 		Process:     "Pamuk Vual",
@@ -136,7 +130,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P016",
 		Process:     "Poly. Pamuk Çift Boya",
@@ -144,7 +138,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P017",
 		Process:     "Poly. Floş Tafta Tek Boya",
@@ -152,7 +146,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P018",
 		Process:     "Poly. Floş Tafta Çift Boya",
@@ -160,7 +154,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P019",
 		Process:     "Floş Viskon EN Likra",
@@ -168,7 +162,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P020",
 		Process:     "Viskon Tek Boya",
@@ -176,7 +170,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P021",
 		Process:     "Viskon Şönil Haşıl (Koyu Renk)",
@@ -184,7 +178,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P022",
 		Process:     "Poly Viskon Çift Boya",
@@ -192,7 +186,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P023",
 		Process:     "Poly. Viskon Çift Boya Likralı",
@@ -200,7 +194,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P024",
 		Process:     "Viskon Cotton Tek Boya",
@@ -208,7 +202,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P025",
 		Process:     "Viskon Cotton Lycra Tek Boya",
@@ -216,7 +210,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P026",
 		Process:     "Işlem Yok",
@@ -224,7 +218,7 @@ func InitDressingPriceList() {
 		ProcessType: "Boya",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P027",
 		Process:     "Su Geçmez",
@@ -232,7 +226,7 @@ func InitDressingPriceList() {
 		ProcessType: "Ek İşlem",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P028",
 		Process:     "Yıkama Apre",
@@ -240,7 +234,7 @@ func InitDressingPriceList() {
 		ProcessType: "Ek İşlem",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P029",
 		Process:     "Ön Pikse",
@@ -248,7 +242,7 @@ func InitDressingPriceList() {
 		ProcessType: "Ek İşlem",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P030",
 		Process:     "Kuru Apre",
@@ -256,7 +250,7 @@ func InitDressingPriceList() {
 		ProcessType: "Ek İşlem",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P031",
 		Process:     "İnceltme",
@@ -264,7 +258,7 @@ func InitDressingPriceList() {
 		ProcessType: "Ek İşlem",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P032",
 		Process:     "Tüy Dökme",
@@ -272,7 +266,7 @@ func InitDressingPriceList() {
 		ProcessType: "Ek İşlem",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P033",
 		Process:     "Gaze",
@@ -280,7 +274,7 @@ func InitDressingPriceList() {
 		ProcessType: "Ek İşlem",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P034",
 		Process:     "Kalender",
@@ -288,7 +282,7 @@ func InitDressingPriceList() {
 		ProcessType: "Ek İşlem",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 	DressingPrice = models.DressingPriceList{
 		Code:        "P035",
 		Process:     "Samfor",
@@ -296,5 +290,5 @@ func InitDressingPriceList() {
 		ProcessType: "Ek İşlem",
 	}
 	config.DB.Create(&DressingPrice)
-	fmt.Println(DressingPrice.ID)
+
 }

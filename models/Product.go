@@ -33,18 +33,18 @@ type Product struct {
 	TotalGram4 float64 `json:"total_gram_4"`
 	Cost4      float64 `json:"cost_4" gorm:"Comment:Çözgü iplik Maliyet 4"`
 
-	WarpYarn5  string  `json:"warp_yarn_5" gorm:"Comment:Çözgü iplik adı 5"`
+	//WarpYarn5  string  `json:"warp_yarn_5" gorm:"Comment:Çözgü iplik adı 5"`
 	Gram5      float64 `json:"gram_5"`
 	Wastage5   float64 `json:"wastage_5" gorm:"Comment:Çözgü iplik % olarak fire 5"`
 	UnitPrice5 float64 `json:"unit_price_5" gorm:"Comment:Çözgü iplik Birim fiyat5"`
 	TotalGram5 float64 `json:"total_gram_5"`
-	Cost5      float64 `json:"cost_5" gorm:"Comment:Çözgü iplik Maliyet5"`
+	Cost5      float64 `json:"cost_5" gorm:"Comment:Çözgü iplik Maliyet 5"`
 
 	WeftYarn1   string  `json:"weft_yarn_1" gorm:"Comment:Atkı iplik adı 1"`
 	Gram01      float64 `json:"gram_01" gorm:"Comment:Atkı iplik gram 1"`
 	Wastage01   float64 `json:"wastage_01" gorm:"Comment:Atkı iplik yüzde olarak fire 1"`
-	UnitPrice01 float64 `json:"unit_price_01" gorm:"Comment:Atkı iplik birim fiyatı 1"`
 	TotalGram01 float64 `json:"total_gram_01" gorm:"Comment:Atkı iplik toplam gram 1"`
+	UnitPrice01 float64 `json:"unit_price_01" gorm:"Comment:Atkı iplik birim fiyatı 1"`
 	Cost01      float64 `json:"cost_01" gorm:"Comment:Atkı iplik maliyet 1"`
 
 	WeftYarn2   string  `json:"weft_yarn_2" gorm:"Comment:Atkı iplik adı 2"`
@@ -75,9 +75,31 @@ type Product struct {
 	TotalGram05 float64 `json:"total_gram_05" gorm:"Comment:Atkı iplik toplam gram 5"`
 	Cost05      float64 `json:"cost_05" gorm:"Comment:Atkı iplik maliyet 5"`
 
-	WeavingWeftOfQuantity uint32  `json:"weaving_weft_of_quantity" gorm:"Comment:Dokuma atkı sayısı"`
+	WeavingWeftOfQuantity float64 `json:"weaving_weft_of_quantity" gorm:"Comment:Dokuma atkı sayısı"`
 	UnitPriceOfWeft       float64 `json:"unit_price_of_weft" gorm:"Comment:Atkı birim fiyatı"`
+	DeverePrice           float64 `json:"devere_price" gorm:"Comment:Devere fiyatı"`
 	TotalWeftPrice        float64 `json:"total_weft_price" gorm:"Comment:Atkı toplam fiyat"`
 	TotalWeftPriceUSD     float64 `json:"total_weft_price_usd" gorm:"Comment:Atkı toplam fiyat USD"`
 	PaintDressingType     string  `json:"paint_dressing_type" gorm:"Comment:Boya apre tipi"`
+
+	Waterproof bool `json:"waterproof" gorm:"Comment:Su geçmez"`
+	YikamaApre bool `json:"yikama_apre" gorm:"Comment:Yıkama apre "`
+	Onfikse    bool `json:"onfikse" `
+	KuruApre   bool `json:"kuru_apre"`
+	Inceltme   bool `json:"inceltme"`
+	TuyDokme   bool `json:"tuy_dokme"`
+	Gaze       bool `json:"gaze"`
+	Kalender   bool `json:"kalender"`
+	Samfor     bool `json:"samfor"`
+
+	ApreGram          float64 `json:"apre_gram" gorm:"Comment:Apre gram"`
+	ApreUnitPrice     float64 `json:"apre_unit_price" gorm:"Comment: Apre birim fiyat"`
+	ApreTotalPrice    float64 `json:"apre_total_price" gorm:"Comment:Apre toplam fiyat"`
+	IntermediateCost  float64 `json:"intermediate_cost" gorm:"Comment:Ara maliyet"`
+	CekmeYuzde        float64 `json:"cekme_yuzde" gorm:"Comment:Çekme %"`
+	CekmePrice        float64 `json:"cekme_price" gorm:"Comment:Çekme fiyat"`
+	TotalCost         float64 `json:"total_cost" gorm:"Comment:Toplam maliyet"`
+	Photo             string  `json:"photo" gorm:"Comment:Resim"`
+	SalesPrices       float64 `json:"sales_prices" gorm:"Comment:Satiş fiyatı $"`
+	AdditionalProcess string  `json:"additional_process" gorm:"Comment:İlave işlem"`
 }

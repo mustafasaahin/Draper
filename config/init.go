@@ -7,14 +7,17 @@ import (
 	"log"
 	"net"
 	"strings"
+	"time"
 )
 
 var (
-	appDBName         = "Draper"
-	appDBHost         = "localhost"
-	appDBUserName     = "postgres"
-	appDBUserPassword = "31298"
-	DB                *gorm.DB
+	appDBName           = "Draper"
+	appDBHost           = "localhost"
+	appDBUserName       = "postgres"
+	appDBUserPassword   = "31298"
+	DB                  *gorm.DB
+	TokenExpireDuration = time.Hour * 1
+	MySecretKey         = "mus28ta06fa20"
 )
 
 func InitDB() {

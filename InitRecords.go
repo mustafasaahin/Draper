@@ -13,6 +13,7 @@ func InitRecords() {
 		models.Yarns{},
 		models.Product{},
 		models.Setup{},
+		models.User{},
 	); err != nil {
 		fmt.Println(err.Error())
 	}
@@ -20,12 +21,14 @@ func InitRecords() {
 		models.Setup{},
 		models.Product{},
 		models.Yarns{},
+		models.User{},
 		models.DressingPriceList{}); err != nil {
 		fmt.Println(err.Error())
 	}
 	InitData.InitDressingPriceList()
-	InitData.InitProduct()
 	InitData.InitYarns()
 	InitData.InitSetup()
+	InitData.InitUser()
+	InitData.InitProduct()
 
 }
